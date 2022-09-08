@@ -26,7 +26,7 @@ export default function ConnexionForm() {
         <TextInput
           className="connexion-input"
           withAsterisk
-          placeholder="your@email.com"
+          placeholder="votre@email.com"
           {...form.getInputProps("email")}
         />
         <TextInput

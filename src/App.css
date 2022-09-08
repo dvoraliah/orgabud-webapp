@@ -154,7 +154,7 @@ font-weight: bold;
   align-items: center;
   border: #5B712C 1px solid;
   border-radius: 5px;
-  width: 593px;
+  width: 591px;
   height: 59px;
   background-color: transparent;
   margin-top: -3%;
@@ -173,4 +173,11 @@ font-weight: bold;
 .sign-up:hover{
   background-color: #5B712C;
   color: #E6F8E0;
+}
+
+.connexion:hover{
+  /* background-color: #E6F8E0;
+  color: #5B712C; */
+  background-color: #5B712C;
+  border: gray 1px solid;
 }
