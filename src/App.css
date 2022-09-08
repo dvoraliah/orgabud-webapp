@@ -137,7 +137,7 @@ font-weight: bold;
   border-radius: 5px;
   width: 192px;
   height: 35px;
-  margin-top: 25%;
+  margin-top: -10%;
   margin-left:10px;
   padding-top: 0.8%;
   font-family: "inter";
@@ -157,6 +157,7 @@ font-weight: bold;
   width: 593px;
   height: 59px;
   background-color: transparent;
+  margin-top: -3%;
 }
 
 .sign-up-text {
@@ -167,4 +168,9 @@ font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   padding-top: 1%;
+}
+
+.sign-up:hover{
+  background-color: #5B712C;
+  color: #E6F8E0;
 }

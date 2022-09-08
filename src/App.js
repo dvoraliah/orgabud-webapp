@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import React from 'react'
 import ConnexionForm from './Component/ConnexionForm'
+// import { TextInput, Button, Group, Box } from "@mantine/core";
 
 
 function App() {
@@ -27,6 +28,11 @@ function App() {
 
         <div className="connexion-contenair">
           <ConnexionForm />
+          {/* <div className="inscription-contenair">
+            <Button className="sign-up" type="submit">
+              S'incrire
+            </Button>
+          </div> */}
           {/*           
           <div className="inscription-contenair">
             <CustomButton
