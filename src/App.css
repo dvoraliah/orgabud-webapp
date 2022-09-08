@@ -1,5 +1,47 @@
-.App {
+/* .App {
   text-align: center;
+} */
+
+@font-face {
+font-family: "AdirekLightItalic";
+src: local("AdirekLightItalic"),
+ url("./asset/fonts/Adirek/Adirek\ Serif\ Light\ Italic.ttf") format("truetype");
+font-weight: light;
+}
+
+@font-face {
+font-family: "AdirekMedium";
+src: local("AdirekSerifMedium"),
+ url("./asset/fonts/Adirek/Adirek\ Serif\ Medium.ttf") format("truetype");
+font-weight: normal;
+}
+
+@font-face {
+font-family: "AdirekBold";
+src: local("Adirek"),
+ url("./asset/fonts/Adirek/Adirek\ Serif\ Bold.ttf") format("truetype");
+font-weight: bold;
+}
+
+.logo {
+  position: flex;
+  height: 20vmin;  
+}
+
+.slogan {
+  box-sizing: content-box;
+  margin: 20% 0 0 -10%;
+  color: #000;
+  font-family: "AdirekLightItalic";
+  font-size: 30px;
+}
+
+.logoName{
+  box-sizing: content-box;
+  font-family: "AdirekBold";
+  font-size: 60px;
+  text-transform: uppercase;
+  margin: -7% 0 0 -10%;
 }
 
 .App-logo {
@@ -14,15 +56,17 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #E6F8E0;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #000;
 }
+
+.slogan
 
 .App-link {
   color: #61dafb;
@@ -35,4 +79,85 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Contenair */
+
+
+.connexion-contenair{
+  position: absolute;
+  box-sizing: content-box;
+  margin: -1% -1% -1% -1%;
+  right: 5%;
+  /* border: purple 1px solid; */
+  display: flex;
+  width: 600px;
+  flex-wrap: wrap;
+}
+
+.inscription-contenair{
+  margin-top: 2%;
+  
+}
+
+/* Input */
+
+.connexion-input {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 11%;
+  width: 192px;
+  height: 32px;
+  padding-left: 10px;
+  /* padding-top: 1%; */
+}
+
+.connexion-input::placeholder {
+  font-family: "inter";
+  font-size: 18px;
+  color: gray;
+}
+
+
+
+/* Boutons */
+
+.connexion {
+  align-items: center;
+  background-color: #5B712C;
+  border: none;
+  border-radius: 5px;
+  width: 192px;
+  height: 32px;
+  margin-top: 11%;
+  padding-top: 0.8%;
+  font-family: "inter";
+  /* font-size: 18px; */
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+.sign-up {
+  align-items: center;
+  border: #5B712C 1px solid;
+  border-radius: 5px;
+  width: 593px;
+  height: 59px;
+  background-color: transparent;
+}
+
+.sign-up-text {
+  font-family: "inter";
+  font-size: 18px;
+  font-weight: bold;
+  color: #5B712C;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 1%;
 }
