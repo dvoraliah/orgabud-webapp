@@ -2,6 +2,7 @@
   text-align: center;
 } */
 
+
 @font-face {
 font-family: "AdirekLightItalic";
 src: local("AdirekLightItalic"),
@@ -103,13 +104,13 @@ font-weight: bold;
 /* Input */
 
 .connexion-input {
-  background-color: white;
+  /* background-color: white; */
   border: none;
   border-radius: 5px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
   margin-top: 11%;
   width: 192px;
-  height: 32px;
+  max-height: 32px;
   padding-left: 10px;
   /* padding-top: 1%; */
 }
@@ -118,6 +119,11 @@ font-weight: bold;
   font-family: "inter";
   font-size: 18px;
   color: gray;
+}
+
+.mantine-gqmpge{
+  height: 32px;
+  max-height: 32px;
 }
 
 
@@ -130,8 +136,9 @@ font-weight: bold;
   border: none;
   border-radius: 5px;
   width: 192px;
-  height: 32px;
-  margin-top: 11%;
+  height: 35px;
+  margin-top: 25%;
+  margin-left:10px;
   padding-top: 0.8%;
   font-family: "inter";
   /* font-size: 18px; */
