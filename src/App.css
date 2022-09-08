@@ -1,6 +1,10 @@
-/* .App {
-  text-align: center;
-} */
+.App {
+  background-color: #E6F8E0;
+}
+
+body {
+  background-color: #E6F8E0!important;
+}
 
 
 @font-face {
@@ -58,7 +62,7 @@ font-weight: bold;
 
 .App-header {
   background-color: #E6F8E0;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   /* flex-direction: column; */
   /* align-items: center; */
@@ -99,6 +103,15 @@ font-weight: bold;
 .inscription-contenair{
   margin-top: 2%;
   
+}
+
+.carousel-contenair{
+  margin-top: 5%;
+  /* border: red 1px solid; */
+  padding-bottom: 2%;
+  /* padding: 20%; */
+  /* margin-top: 20%;
+  margin-bottom: 20%; */
 }
 
 /* Input */
@@ -180,4 +193,37 @@ font-weight: bold;
   color: #5B712C; */
   background-color: #5B712C;
   border: gray 1px solid;
+}
+
+.password-forgot{
+  margin-top: -28%;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  color: #5B712C;
+  font-family: 'AdirekLightItalic';
+  font-weight: 200;
+}
+.password-forgot:hover{
+  background-color: transparent;
+}
+
+.text-transparent{
+  color:#E6F8E0;
+}
+
+/* Images */
+
+.slide {
+  /* max-height: 400px; */
+  max-width: 600px;
+  
+}
+
+.slide-legend {
+  padding: 2%;
+  color: #5B712C;
+  font-family: "inter";
+  /* border: #000 1px solid; */
+  padding-bottom: 10px;
 }

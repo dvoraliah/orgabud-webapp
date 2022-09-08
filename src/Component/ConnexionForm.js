@@ -36,10 +36,17 @@ export default function ConnexionForm() {
           {...form.getInputProps("password")}
         />
         <Group position="right" mt="md">
+          <Button className="password-forgot">
+            Mot de passe oublié ?<span className="text-transparent">.</span>
+          </Button>
           <Button className="connexion" type="submit">
             Connexion
           </Button>
-          <Button className="sign-up sign-up-text" type="button" onClick={onSignUpClicked}>
+          <Button
+            className="sign-up sign-up-text"
+            type="button"
+            onClick={onSignUpClicked}
+          >
             S'incrire
           </Button>
         </Group>
