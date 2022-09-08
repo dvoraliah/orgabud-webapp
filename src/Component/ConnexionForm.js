@@ -4,7 +4,7 @@ import { TextInput, Button, Group, Box } from "@mantine/core";
 export default function ConnexionForm() {
 
       const onClickedConnect = (props) => {
-        console.log(props.values);
+        console.log(props);
       };
       const form = useForm({
         initialValues: {
