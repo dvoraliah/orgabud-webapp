@@ -17,7 +17,7 @@ export default function CarouselAutoPlay() {
       height={450}
       styles={{
         control: {
-           
+            
             opacity: 0,
             cursor: "default",
           

@@ -4,6 +4,29 @@
 
 body {
   background-color: #E6F8E0!important;
+  
+}
+.body{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+/* header */
+
+.header-left {
+  width: 55%;
+/* border: red 1px solid; */
+display: inline-block;
+}
+
+.header-right {
+  width: 45%;
+  /* border: blue 1px solid; */
+  display: inline-block;
+  vertical-align: -moz-middle-with-baseline;
+
 }
 
 
@@ -15,6 +38,13 @@ font-weight: light;
 }
 
 @font-face {
+font-family: "Adirek";
+src: local("Adirek"),
+ url("./asset/fonts/Adirek/Adirek\ Serif\ Regular.ttf") format("truetype");
+font-weight: normal;
+}
+
+@font-face {
 font-family: "AdirekMedium";
 src: local("AdirekSerifMedium"),
  url("./asset/fonts/Adirek/Adirek\ Serif\ Medium.ttf") format("truetype");
@@ -23,22 +53,48 @@ font-weight: normal;
 
 @font-face {
 font-family: "AdirekBold";
-src: local("Adirek"),
+src: local("AdirekBold"),
  url("./asset/fonts/Adirek/Adirek\ Serif\ Bold.ttf") format("truetype");
 font-weight: bold;
 }
 
-.logo {
-  position: flex;
-  height: 20vmin;  
+@font-face {
+font-family: "AdirekSemiBold";
+src: local("AdirekSemiBold"),
+ url("./asset/fonts/Adirek/Adirek\ Serif\ SemiBold.ttf") format("truetype");
+font-weight: bold;
 }
 
+.logo {
+  /* position: flex; */
+  /* height: 20vmin;   */
+  width: 100%;
+  cursor: pointer;
+}
+.logoslogan{
+  width: 100%;
+  display: inline-block;
+  
+}
+
+.container-logo{
+  width: 25%;
+  display: inline-block;
+}
+.slogan-container{
+  display: inline-block;
+  width: 70%;
+  vertical-align: middle;
+  
+}
 .slogan {
+  display: inline-block;
   box-sizing: content-box;
-  margin: 20% 0 0 -10%;
+  /* margin: 20% 0 0 -10%; */
   color: #000;
   font-family: "AdirekLightItalic";
   font-size: 30px;
+  cursor: pointer;
 }
 
 .logoName{
@@ -46,7 +102,8 @@ font-weight: bold;
   font-family: "AdirekBold";
   font-size: 60px;
   text-transform: uppercase;
-  margin: -7% 0 0 -10%;
+  cursor: pointer;
+  /* margin: -7% 0 0 -10%; */
 }
 
 .App-logo {
@@ -62,8 +119,9 @@ font-weight: bold;
 
 .App-header {
   background-color: #E6F8E0;
+  width: 100%;
   /* min-height: 100vh; */
-  display: flex;
+  display: inline-block;
   /* flex-direction: column; */
   /* align-items: center; */
   /* justify-content: center; */
@@ -90,20 +148,27 @@ font-weight: bold;
 
 
 .connexion-contenair{
-  position: absolute;
+  /* position: absolute; */
   box-sizing: content-box;
   margin: -1% -1% -1% -1%;
-  right: 5%;
+  /* right: 5%; */
   /* border: purple 1px solid; */
-  display: flex;
-  width: 600px;
-  flex-wrap: wrap;
+  display: inline-block;
+  width: 100%;
+  /* flex-wrap: wrap; */
 }
 
 .inscription-contenair{
-  margin-top: 2%;
+  width: 100%;
+  display: inline-block;
+  /* border : red 1px solid; */
   
 }
+
+.spacer-inscription{
+  width: 40%;
+}
+
 
 .carousel-contenair{
   margin-top: 5%;
@@ -114,6 +179,20 @@ font-weight: bold;
   margin-bottom: 20%; */
 }
 
+.sign-up-form-contenair{
+  width: 100%;
+
+display: flex;
+justify-content: center;
+}
+
+.form-connexion-contenair{
+  width: 100%;
+}
+.password-forgot-container {
+  width: 100%;
+}
+
 /* Input */
 
 .connexion-input {
@@ -121,10 +200,11 @@ font-weight: bold;
   border: none;
   border-radius: 5px;
   /* margin-right: 10px; */
-  margin-top: 11%;
+  /* margin-top: 11%; */
   width: 192px;
   max-height: 32px;
   padding-left: 10px;
+  display: inline-block;
   /* padding-top: 1%; */
 }
 
@@ -139,23 +219,43 @@ font-weight: bold;
   max-height: 32px;
 }
 
+.inscription-input{
+  width: 100%;
+  height: 57px;
+  padding-bottom: 13%;
+  /* padding-bottom: 20%; */
+}
+
+.email-connexion-input{
+  width: 30%;
+}
+
+.password-connexion-input{
+  width: 30%;
+}
+
+
 
 
 /* Boutons */
+
+.button-inscription{
+  width: 100%;
+  background-color: #5B712C;
+}
 
 .connexion {
   align-items: center;
   background-color: #5B712C;
   border: none;
   border-radius: 5px;
-  width: 192px;
+  width: 37%;
   height: 35px;
-  margin-top: -10%;
-  margin-left:10px;
+  margin-left:3%;
   padding-top: 0.8%;
+  margin-bottom: 10px;
   font-family: "inter";
   /* font-size: 18px; */
-  font-size: large;
   font-weight: bold;
   color: white;
   text-transform: uppercase;
@@ -182,12 +282,22 @@ font-weight: bold;
   text-align: center;
   padding-top: 1%;
 }
+.mantine-1dgn3jq:checked {
+  background-color: #5B712C;
+  border-color: #5B712C;
+}
 
+.mantine-InputWrapper-error {
+  text-align: end;
+}
 .sign-up:hover{
   background-color: #5B712C;
   color: #E6F8E0;
 }
-
+.plain-button-no-hover:hover{
+  background-color: #5B712C;
+  border: gray 1px solid;
+}
 .connexion:hover{
   /* background-color: #E6F8E0;
   color: #5B712C; */
@@ -196,8 +306,9 @@ font-weight: bold;
 }
 
 .password-forgot{
-  margin-top: -28%;
-  position: absolute;
+  /* margin-top: -28%; */
+  /* position: absolute; */
+  width: 30%;
   border: none;
   background-color: transparent;
   color: #5B712C;
@@ -226,4 +337,26 @@ font-weight: bold;
   font-family: "inter";
   /* border: #000 1px solid; */
   padding-bottom: 10px;
+}
+
+/* Textes */
+
+.sign-up-form-text{
+  font-family: "AdirekSemiBold";
+  font-size: 46px;
+  color: #000;
+  width: 10%;
+}
+
+.password-forgot-span{
+  width: 70%;
+  display: inline-block;
+}
+
+.error_api_text{
+  color: red;
+} 
+
+.hidden{
+  visibility: hidden;
 }
