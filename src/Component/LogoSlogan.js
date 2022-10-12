@@ -3,7 +3,7 @@ import logo from "../asset/images/logo.png";
 import { useNavigate } from "react-router-dom";
 
 
-export default function LogoSlogan() {
+export default function LogoSlogan(props) {
 
     let navigate = useNavigate();
     const returnToHome = () => {
@@ -17,8 +17,8 @@ export default function LogoSlogan() {
                 <img src={logo} className="logo" alt="logo" onClick={returnToHome} />
             </div>
             <div className="slogan-container" onClick={returnToHome}>
-                <div className="slogan">S'organiser, économiser</div>
-                <div className="logoName">Orgabud</div>
+                <div className="slogan">{props.slogan}</div>
+                <div className="logoName">{props.sitename}</div>
             </div>
         </div>
     )

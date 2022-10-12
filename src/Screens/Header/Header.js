@@ -20,11 +20,14 @@ export default function Header() {
     return (
       <header className="App-header">
         <div className="header-left">
-          <LogoSlogan />
+          <LogoSlogan slogan={"S'organiser, économiser"} sitename={"Orgabud"} />
         </div>
         <div className="header-right">
           {/* <div className="connexion-contenair"> */}
-          <ConnexionForm onSignUpClicked={onSignUpClicked} onClickedConnect={onClickedConnect}/>
+          <ConnexionForm
+            onSignUpClicked={onSignUpClicked}
+            onClickedConnect={onClickedConnect}
+          />
           {/* </div> */}
         </div>
       </header>
