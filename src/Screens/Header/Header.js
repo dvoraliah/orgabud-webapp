@@ -23,6 +23,10 @@ export default function Header() {
     OrgabudLOGIN(props.email, props.password, whenLogged);
   };
 
+  const onMyDashboardClicked = () => {
+    let path= "/dashboard";
+    navigate(path)
+  }
   const onDisconnectClicked = () => {
     sessionStorage.removeItem("token");
     sessionStorage.removeItem("pseudo");
@@ -37,14 +41,17 @@ export default function Header() {
         </div>
         <div className="header-right">
           {sessionStorage.getItem("token") ? (
-            <ConnectedForm onDisconnectClicked={onDisconnectClicked} pseudo={sessionStorage.getItem("pseudo")}/>
+            <ConnectedForm
+              onDisconnectClicked={onDisconnectClicked}
+              onMyDashboardClicked={onMyDashboardClicked}
+              pseudo={sessionStorage.getItem("pseudo")}
+            />
           ) : (
             <ConnexionForm
               onSignUpClicked={onSignUpClicked}
               onClickedConnect={onClickedConnect}
             />
           )}
-
         </div>
       </header>
     );

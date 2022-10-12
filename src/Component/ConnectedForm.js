@@ -29,10 +29,11 @@ export default function ConnectedForm(props) {
               </div>
               <div className="welcome-picture-box">
                 <img
-                    src={ProfilPicture}
-                    className="header-profil-picture"
-                    title="Modifier le profil"
-                    onClick={onModifyProfilClicked}
+                  src={ProfilPicture}
+                  alt="Profil"
+                  className="header-profil-picture"
+                  title="Modifier le profil"
+                  onClick={onModifyProfilClicked}
                 />
               </div>
             </div>
@@ -40,13 +41,22 @@ export default function ConnectedForm(props) {
             <div className="form-connexion-contenair"></div>
             <Group position="right" mt="md">
               {/* <Link to="/register"> */}
-              <Button
-                className="sign-up sign-up-text"
-                type="button"
-                onClick={props.onDisconnectClicked}
-              >
-                Se Déconnecter
-              </Button>
+              <div className="connected-header-buttons-box">
+                <Button
+                  className="my-dashboard-button sign-up-text"
+                  type="button"
+                  onClick={props.onMyDashboardClicked}
+                >
+                  Mon Dashboard
+                </Button>
+                <Button
+                  className="disconnect-button sign-up-text"
+                  type="button"
+                  onClick={props.onDisconnectClicked}
+                >
+                  Se Déconnecter
+                </Button>
+              </div>
               {/* </Link> */}
             </Group>
           </form>

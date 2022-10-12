@@ -438,3 +438,36 @@ justify-content: center;
   color: red;
   border: 1px solid red
 }
+.connected-header-buttons-box{
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  
+}
+.my-dashboard-button{
+  width: 49%;
+  align-items: center;
+  border: #5B712C 1px solid;
+  border-radius: 5px;
+  height: 59px;
+  background-color: transparent;
+}
+
+.my-dashboard-button:hover{
+  background-color: #5B712C;
+  color: #fff
+}
+
+.disconnect-button{
+  width: 49%;
+  align-items: center;
+  border: #5B712C 1px solid;
+  border-radius: 5px;
+  height: 59px;
+  background-color: transparent;
+}
+
+.disconnect-button:hover{
+  background-color: #5B712C;
+  color: #fff
+}
