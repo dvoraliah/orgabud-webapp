@@ -2,12 +2,12 @@
 import axios from "axios";
 
 
-export const baseURL = "http://5.39.76.125/dvoraliah/orgabud-website/public/index.php/api/";
-export function OrgabudLOGIN() {
+export const baseURL = "http://orgabud.ranaweera.fr/api/";
+export function OrgabudLOGIN(email, password) {
     axios
       .post(baseURL + "login", {
-        email: "dvoraliah@test.fr",
-        password: "anya",
+        email: email,
+        password: password,
       })
       .then((response) => {
         console.log(response.data);

@@ -2,6 +2,7 @@ import React from 'react'
 import ConnexionForm from "../../Component/ConnexionForm";
 import LogoSlogan from "../../Component/LogoSlogan";
 import { useNavigate } from "react-router-dom";
+import {OrgabudLOGIN} from "../../Services/OrgabudAPI"
 
 
 export default function Header() {
@@ -14,7 +15,7 @@ export default function Header() {
   };
 
   const onClickedConnect = (props) => {
-    console.log(props);
+    OrgabudLOGIN(props.email, props.password);
   };
 
     return (
@@ -23,12 +24,10 @@ export default function Header() {
           <LogoSlogan slogan={"S'organiser, économiser"} sitename={"Orgabud"} />
         </div>
         <div className="header-right">
-          {/* <div className="connexion-contenair"> */}
           <ConnexionForm
             onSignUpClicked={onSignUpClicked}
             onClickedConnect={onClickedConnect}
           />
-          {/* </div> */}
         </div>
       </header>
     );
