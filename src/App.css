@@ -375,6 +375,7 @@ justify-content: center;
   border: 1px solid black;
   border-radius: 50%;
   float: right;
+  cursor: pointer;
 }
 
 .welcome-header-text{
@@ -387,4 +388,53 @@ justify-content: center;
 .welcome-picture-box{
   width: 20%;
   
+}
+
+.change-mail-contenair{
+  padding: 30px 30px 30px 30px;
+}
+.profil-title-text{
+  font-family: AdirekSemiBold;
+  font-size: 40px;
+  padding-top: 5%;
+}
+
+.profil-change-mail-input{
+  width: 100%;
+}
+
+.profil-warning-text{
+  font-family: "inter";
+  font-size: 15px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.profil-button-password{
+  width: 100%;
+  font-family: "inter";
+  font-size: 15px;
+  font-weight: "bold";
+  background-color: #5B712C;
+}
+
+.profil-button-password:hover {
+  background-color: transparent;
+  color: #5B712C;
+  border: 1px solid #5B712C;
+}
+
+.profil-button-delete-account {
+  font-family: "inter";
+  font-size: 15px;
+  font-weight: "bold";
+  background-color: red;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.profil-button-delete-account:hover {
+  background-color: transparent;
+  color: red;
+  border: 1px solid red
 }

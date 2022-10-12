@@ -1,18 +1,21 @@
 import React from 'react'
 import { useForm } from "@mantine/form";
-import { TextInput, Button, Group, Box } from "@mantine/core";
+import { Button, Group, Box } from "@mantine/core";
 import ProfilPicture from "../asset/images/profil_pictures/profil_default.png";
 
 export default function ConnectedForm(props) {
 
     const form = useForm({
-      initialValues: {
+        initialValues: {
         email: "",
         password: "",
-      },
+        },
     });
 
-    console.log(sessionStorage.pseudo)
+    const onModifyProfilClicked = () => {
+        console.log("modif")
+    }
+
     return (
       <div>
         <Box sx={{ maxWidth: 600 }} mx="auto">
@@ -26,10 +29,10 @@ export default function ConnectedForm(props) {
               </div>
               <div className="welcome-picture-box">
                 <img
-                  src={ProfilPicture}
-                  className="header-profil-picture"
-                  alt="profil picture"
-                  // onClick={returnToHome}
+                    src={ProfilPicture}
+                    className="header-profil-picture"
+                    title="Modifier le profil"
+                    onClick={onModifyProfilClicked}
                 />
               </div>
             </div>
