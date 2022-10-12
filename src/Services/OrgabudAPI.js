@@ -3,7 +3,9 @@ import axios from "axios";
 
 
 export const baseURL = "http://orgabud.ranaweera.fr/api/";
+
 export function OrgabudLOGIN(email, password, whenLogged) {
+  
   
     axios
       .post(baseURL + "login", {
@@ -21,8 +23,6 @@ export function OrgabudLOGIN(email, password, whenLogged) {
 }
 
 export async function OrgabudREGISTER(pseudo, email, password, password_confirmation) {
-    
-    //let navigate = useNavigate();
 
     await axios.post(baseURL+"register", {
         name: pseudo,
@@ -44,4 +44,16 @@ export async function OrgabudREGISTER(pseudo, email, password, password_confirma
         sessionStorage.setItem("pseudo", response.data.name)
         return true;
     })
+}
+
+export async function OrgabudGetCategories(){
+  let tokenData = {
+    headers: {
+      'Authorization': 'Bearer ' + sessionStorage.getItem("token")
+    }
+  }
+  return await axios.get(
+    baseURL + "categories", tokenData
+    )
+
 }

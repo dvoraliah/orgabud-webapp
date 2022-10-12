@@ -471,3 +471,15 @@ justify-content: center;
   background-color: #5B712C;
   color: #fff
 }
+
+.category-picker{
+  width: 30%;
+  padding: 2% 5% 0 5%;
+  font-family: "Adirek" ;
+  font-size: 25px;
+}
+
+.mantine-1ajyf09{
+  font-family: "Adirek";
+  font-size: 25px;
+}
