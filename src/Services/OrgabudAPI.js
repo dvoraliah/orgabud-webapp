@@ -3,14 +3,20 @@ import axios from "axios";
 
 
 export const baseURL = "http://orgabud.ranaweera.fr/api/";
-export function OrgabudLOGIN(email, password) {
+export function OrgabudLOGIN(email, password, whenLogged) {
+  
     axios
       .post(baseURL + "login", {
-        email: email,
-        password: password,
+        // email: email,
+        // password: password,
+        email: "dvoraliah@test.fr",
+        password: "anya",
       })
       .then((response) => {
-        console.log(response.data);
+        sessionStorage.setItem("token", response.data.token);
+        sessionStorage.setItem("pseudo", response.data.user.name);
+        // console.log(response.data.user.name);
+        whenLogged();
       });
 }
 

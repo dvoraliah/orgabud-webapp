@@ -8,6 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import Register from "./Screens/Register/Register";
 import Home from "./Screens/Home/Home";
 import Header from "./Screens/Header/Header"
+import Dashboard from './Screens/Dashboard/Dashboard';
 
 
 function App() {
@@ -16,8 +17,9 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Dashboard />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
 
     </div>

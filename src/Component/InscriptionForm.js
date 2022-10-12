@@ -16,7 +16,7 @@ export default function InscriptionForm() {
             navigate(path);
         }
     }
-    console.log(sessionStorage.getItem("token"))
+    // console.log(sessionStorage.getItem("token"))
     const form = useForm({
     initialValues: {
       pseudo: "test",

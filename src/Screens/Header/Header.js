@@ -1,5 +1,6 @@
 import React from 'react'
 import ConnexionForm from "../../Component/ConnexionForm";
+import ConnectedForm from "../../Component/ConnectedForm"
 import LogoSlogan from "../../Component/LogoSlogan";
 import { useNavigate } from "react-router-dom";
 import {OrgabudLOGIN} from "../../Services/OrgabudAPI"
@@ -15,7 +16,18 @@ export default function Header() {
   };
 
   const onClickedConnect = (props) => {
-    OrgabudLOGIN(props.email, props.password);
+    const whenLogged = ()=> {
+      let path = "/dashboard";
+      navigate(path)
+    }
+    OrgabudLOGIN(props.email, props.password, whenLogged);
+  };
+
+  const onDisconnectClicked = () => {
+    sessionStorage.removeItem("token");
+    sessionStorage.removeItem("pseudo");
+    let path = "/";
+    navigate(path);
   };
 
     return (
@@ -24,10 +36,15 @@ export default function Header() {
           <LogoSlogan slogan={"S'organiser, économiser"} sitename={"Orgabud"} />
         </div>
         <div className="header-right">
-          <ConnexionForm
-            onSignUpClicked={onSignUpClicked}
-            onClickedConnect={onClickedConnect}
-          />
+          {sessionStorage.getItem("token") ? (
+            <ConnectedForm onDisconnectClicked={onDisconnectClicked} pseudo={sessionStorage.getItem("pseudo")}/>
+          ) : (
+            <ConnexionForm
+              onSignUpClicked={onSignUpClicked}
+              onClickedConnect={onClickedConnect}
+            />
+          )}
+
         </div>
       </header>
     );

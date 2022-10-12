@@ -71,6 +71,8 @@ font-weight: bold;
   width: 100%;
   cursor: pointer;
 }
+
+
 .logoslogan{
   width: 100%;
   display: inline-block;
@@ -359,4 +361,30 @@ justify-content: center;
 
 .hidden{
   visibility: hidden;
+}
+
+.welcome-header-box{
+  display: inline-flex;
+  font-family: "inter";
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.header-profil-picture{
+  width: 70%;
+  border: 1px solid black;
+  border-radius: 50%;
+  float: right;
+}
+
+.welcome-header-text{
+  width: 80%;
+  font-size: 20px;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.welcome-picture-box{
+  width: 20%;
+  
 }
