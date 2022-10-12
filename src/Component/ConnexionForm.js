@@ -1,20 +1,8 @@
 import { useForm } from "@mantine/form";
 import { TextInput, Button, Group, Box } from "@mantine/core";
-import { useNavigate } from "react-router-dom";
 
-export default function ConnexionForm() {
-  let navigate = useNavigate(); 
+export default function ConnexionForm(props) {
 
-  const onClickedConnect = (props) => {
-    console.log(props);
-    
-    
-  };
-
-  const onSignUpClicked = () => {
-    let path = "/register";
-    navigate(path);
-  }
   const form = useForm({
     initialValues: {
       email: "",
@@ -26,7 +14,7 @@ export default function ConnexionForm() {
     <Box sx={{ maxWidth: 600 }} mx="auto">
       <form
         className="connexion-contenair"
-        onSubmit={form.onSubmit((values) => onClickedConnect(values))}
+        onSubmit={form.onSubmit((values) => props.onClickedConnect(values))}
       >
         <div className='password-forgot-container'>
           <span className="password-forgot-span"></span>
@@ -58,7 +46,7 @@ export default function ConnexionForm() {
             <Button
               className="sign-up sign-up-text"
               type="button"
-              onClick={onSignUpClicked}
+              onClick={props.onSignUpClicked}
             >
               S'incrire
             </Button>
