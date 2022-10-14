@@ -40,9 +40,6 @@ export default function ConnexionForm(props) {
           </Button>
         </div>
         <Group position="right" mt="md">
-          
-          
-          {/* <Link to="/register"> */}
             <Button
               className="sign-up sign-up-text"
               type="button"
@@ -50,7 +47,6 @@ export default function ConnexionForm(props) {
             >
               S'incrire
             </Button>
-          {/* </Link> */}
         </Group>
       </form>
     </Box>
